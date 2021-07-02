@@ -1,0 +1,67 @@
+
+/* Css */
+
+/* Title & NavBar */
+
+.top{
+    background: linear-gradient(135deg,#890596,#1CC5DC,#F5F7B2);
+    background-size: 500% 500%;
+    animation: Gradient 15s ease infinite;
+    /* font-family: 'Tourney', cursive; */
+    font-family: 'Inconsolata', monospace;
+}
+
+.top .title .left-title > h1{
+    font-family: 'Tourney', cursive;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 80px;
+    text-shadow: 4.5px 3.5px 0 rgb(224, 224, 224);
+    margin: 0;
+}
+
+.top .title .left-title > h3{
+    margin: 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: -15px;
+}
+.top .title .left-title > p {
+    font-size: 20px;
+}
+.top .title .right-title {
+    text-align: center;
+}
+.top .title .right-title> i{
+    font-size: 200px;
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: 4.5px 3.5px 0 rgb(224, 224, 224,0.2);
+}
+
+.top .navmenu{
+    background-color: rgba(240, 248, 255, 0.2);
+}
+
+.top .navmenu > a{
+    font-family: 'Tourney', cursive;
+    font-weight: 900;
+    font-size: 30px;
+}
+.menulist{
+    font-family: monospace;
+    font-size: 20px;
+    padding: 0 10px 0;
+}
+/* animation */
+@keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
