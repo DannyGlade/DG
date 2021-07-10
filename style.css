@@ -1,67 +1,89 @@
+/* Fonts */
 
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Tourney:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Css */
 
 /* Title & NavBar */
 
-.top{
-    background: linear-gradient(135deg,#890596,#1CC5DC,#F5F7B2);
-    background-size: 500% 500%;
-    animation: Gradient 15s ease infinite;
-    /* font-family: 'Tourney', cursive; */
-    font-family: 'Inconsolata', monospace;
+.top {
+  background: linear-gradient(135deg, #890596, #1cc5dc, #f5f7b2);
+  background-size: 500% 500%;
+  animation: Gradient 15s ease infinite;
+  /* font-family: 'Tourney', cursive; */
+  font-family: "Inconsolata", monospace;
+}
+.top .title .left-title > h1 {
+  font-family: "Tourney", cursive;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 140px;
+  text-shadow: 5px 4.5px 0 rgb(224, 224, 224);
+  -webkit-text-stroke: 1px;
+  margin: 0;
 }
 
-.top .title .left-title > h1{
-    font-family: 'Tourney', cursive;
-    font-style: italic;
-    font-weight: 900;
-    font-size: 80px;
-    text-shadow: 4.5px 3.5px 0 rgb(224, 224, 224);
-    margin: 0;
+.title {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.top .title .left-title > h3{
-    margin: 0;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 30px;
-    margin-bottom: -15px;
+.top .title .left-title > h3 {
+  margin: 0;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: -10px;
 }
 .top .title .left-title > p {
-    font-size: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
 .top .title .right-title {
-    text-align: center;
+  text-align: center;
 }
-.top .title .right-title> i{
-    font-size: 200px;
-    color: rgba(0, 0, 0, 0.5);
-    text-shadow: 4.5px 3.5px 0 rgb(224, 224, 224,0.2);
+.top .title .right-title > i {
+  font-size: 300px;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 4.5px 3.5px 0 rgb(224, 224, 224, 0.2);
 }
-
-.top .navmenu{
-    background-color: rgba(240, 248, 255, 0.2);
-}
-
-.top .navmenu > a{
-    font-family: 'Tourney', cursive;
-    font-weight: 900;
+/* Change Font size when in small screen */
+@media only screen and (max-width: 1080px) {
+  .top .title .left-title > h1 {
+    font-size: 80px;
+  }
+  .top .title .left-title > h3{
     font-size: 30px;
+  }
+  .top .title .left-title > p{
+    font-size: 23px;
+  }
+  .top .title .right-title > i{
+    font-size: 200px;  
+  }
 }
-.menulist{
-    font-family: monospace;
-    font-size: 20px;
-    padding: 0 10px 0;
+.top .navmenu {
+  background-color: rgba(240, 248, 255, 0.2);
+}
+
+.top .navmenu > a {
+  font-family: "Tourney", cursive;
+  font-weight: 900;
+  font-size: 30px;
+}
+.menulist {
+  font-family: monospace;
+  font-size: 20px;
+  padding: 0 10px 0;
 }
 /* animation */
 @keyframes Gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
