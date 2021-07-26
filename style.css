@@ -1,5 +1,5 @@
 /* Fonts */
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Tourney:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Css */
 
@@ -46,19 +46,39 @@
   color: rgba(0, 0, 0, 0.5);
   text-shadow: 4.5px 3.5px 0 rgb(224, 224, 224, 0.2);
 }
+/* Languages Bar */
+.langs {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.langcenter{
+  margin-left: auto;
+  margin-right: auto;
+}
+.langcard{
+  text-align: center;
+  padding: 0em;
+  background-color: rgba(0, 255, 255, 0.151);
+  border-radius: 15px;
+}
+.langs .langdex .langcard > i {
+  font-size: 120px;
+}
+.langs .langdex .langcard > h3{
+  font-size: 20px;
+}
 /* Change Font size when in small screen */
 @media only screen and (max-width: 1080px) {
   .top .title .left-title > h1 {
     font-size: 80px;
   }
-  .top .title .left-title > h3{
+  .top .title .left-title > h3 {
     font-size: 30px;
   }
-  .top .title .left-title > p{
+  .top .title .left-title > p {
     font-size: 23px;
   }
-  .top .title .right-title > i{
-    font-size: 200px;  
+  .top .title .right-title > i {
+    font-size: 200px;
   }
 }
 .top .navmenu {
