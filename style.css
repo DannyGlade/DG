@@ -3,12 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Tourney:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Css */
 
-/* Title & NavBar */
-
-.top {
+/* Gradient BG */
+.bggrad{
   background: linear-gradient(135deg, #890596, #1cc5dc, #f5f7b2);
   background-size: 500% 500%;
   animation: Gradient 15s ease infinite;
+}
+/* .bodygrad{
+  background: linear-gradient(135deg, #54025c, #1cc5dc, #f5f7b2);
+  background-size: 500% 500%;
+  animation: Gradient 15s ease infinite;
+} */
+/* Title & NavBar */
+
+.top {
   /* font-family: 'Tourney', cursive; */
   font-family: "Inconsolata", monospace;
 }
@@ -56,15 +64,18 @@
 }
 .langcard{
   text-align: center;
-  padding: 0em;
+  padding: 1em;
+  margin: 0.5em 0em;
   background-color: rgba(0, 255, 255, 0.151);
   border-radius: 15px;
+  border: none;
 }
 .langs .langdex .langcard > i {
   font-size: 120px;
 }
 .langs .langdex .langcard > h3{
   font-size: 20px;
+  width: auto;
 }
 /* Change Font size when in small screen */
 @media only screen and (max-width: 1080px) {
